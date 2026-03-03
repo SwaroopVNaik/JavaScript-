@@ -5,12 +5,7 @@
 const accountId = 144553
 let accountEmail = "svn@gmail.com"
 var accountPassword = "12345"
-accountCity = "Jaipur" // this method is not good,but few times its possible
-let accountState;
-
-/* 
-In JS when we declare variable and do not assign any number its will 
-declare this variable as undefined.
+accountCity = "Jaipur" // this method is not good,but few times its possible 
 /*
 
 
