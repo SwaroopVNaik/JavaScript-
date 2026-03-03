@@ -21,11 +21,13 @@ accountEmail = "svn@.com"
 accountPassword = "7777"
 accountCity = "Bangaluru"
 
-console.log(accountEmail);
+console.log(accountEmail); []
 
 /* 
 Prefer not to use var, because of issue in block scope and 
 functional scope.
+
+let is block or funtional scope.
  */
 
 console.table([accountId, accountPassword, accountCity, accountEmail, accountState]);
