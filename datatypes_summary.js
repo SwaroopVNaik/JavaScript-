@@ -68,3 +68,33 @@ console.log(typeof heros);
 // Object (Native and host does implement) = Function
 /* Object (Host and does not implement) = Implementation except may 
 not be "undefined, Boolean, "number, or string */
+
+// ****************************************************************
+
+// There two types of Memory Stack and Heap Memory
+
+// stack Memory is used by Primitive DataTypes ?
+
+// Heap Memory is used by Non - Primitive DataTypes.
+
+let mychannel = "SwaroopVNaikdotcom"
+
+let anothername = mychannel
+
+anothername = "chaiaurcode"
+
+console.log(mychannel);
+console.log(anothername);
+
+let user_1 = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let User_2 = user_1
+
+// accesing element of the objects are this way =>
+User_2.email = "Swaroop@google.com"
+
+console.log(user_1.email);
+console.log(User_2.email);
