@@ -8,6 +8,7 @@ const repoCount = 50
 //  Do not prefer this Syntax
 // console.log(name + repoCount + " Value");
 
+// always follow this Syntax
 console.log(`Hello My Name is ${name} and my repo count is ${repoCount}`);
 
 // Method 2 of declaring String 
