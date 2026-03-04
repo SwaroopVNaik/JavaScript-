@@ -68,12 +68,3 @@ console.log(typeof heros);
 // Object (Native and host does implement) = Function
 /* Object (Host and does not implement) = Implementation except may 
 not be "undefined, Boolean, "number, or string */
-
-
-
-
-
-
-
-
-
