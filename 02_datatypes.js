@@ -19,6 +19,7 @@ let state;
 // symbols => unique
 
 // Non - primitive Data Types
+// holds Multiple Values.
 // Object ---> js array ---> js object
 
 //typeof -> to check the the datatype ! 
