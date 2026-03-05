@@ -131,12 +131,13 @@ console.log("Prefix:");
 console.log("Value of resultPrefix:", resultPrefix); // 6
 console.log("Value of b after increment:", b); // 6
 
+// Types of Operation :-
 
-
-
-
-
-
-
-
-
+// Arithematic Operation -> + , -, *, /, %    
+// Logical Operation -> &&(AND),  ||(OR)
+// Relational Operation -> <, <=, >, >= 
+// Equality Operation -> == === !=
+// Increement/Decreement  -> ++, -- 
+// Ternary Operation -> ?, :
+// Exponantion Operator -> ** 
+// Bitwise Operation -> &(AND), |(OR), <<(LEFT SHIFT), >>(RIGHT SHIFT), ^(XOR), ~(NOT) 
