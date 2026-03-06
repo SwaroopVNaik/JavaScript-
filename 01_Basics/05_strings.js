@@ -39,6 +39,11 @@ const newStringOne = "  Swaroop  "
 console.log(newStringOne);
 console.log(newStringOne.trim()); // trim's the White-spaces
 
+// URL Contains three domains
+// 1) Domain Name
+// 2) Path Para
+// 3) Query Para
+
 const url = "https://swaroop.com/swaroop%20naik"
 console.log(url.replace('%20', '-'));
 console.log(url.includes('v')); // checks if value is present in the URL
