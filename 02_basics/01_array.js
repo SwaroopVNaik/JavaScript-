@@ -11,37 +11,37 @@ const cars = ["BMW", "MERCEDES", "FORTUNER"]
 
 const myArray_V2 = new Array(1, 2, 3, 4)
 
-// console.log(myArray[0]);
-// console.log(myArray[1]);
+console.log(myArray[0]);
+console.log(myArray[1]);
 
 // Array methods
 
-// myArray.push(6)
-// myArray.push(7)
-// console.log(myArray);
+myArray.push(6)
+myArray.push(7)
+console.log(myArray);
 
 // Pop's last element (delete)
-// myArray.pop()
+myArray.pop()
 
-// console.log(myArray);
+console.log(myArray);
 
 /* adds elements at the start of the array but not good method when there are many array element it consumes more time and gives more load on the CPU */
 
 myArray.unshift(9)
 
-// console.log(myArray);
+console.log(myArray);
 
 //  Removes the elements at start. 
 myArray.shift()
 
-// console.log(myArray);
+console.log(myArray);
 
 /* 
 includes => checks if the particular element is present in the array.
 it gives result in True | False.
 */
 
-// console.log(myArray.includes(9));
+console.log(myArray.includes(9));
 
 /* works same as includes() but if the element is not prest it gives -1 if present it gives element output 3 */
 // console.log(myArray.indexOf(3));
@@ -49,9 +49,9 @@ it gives result in True | False.
 // join converts the array to string
 const array_V3 = myArray.join() 
 
-// console.log(myArray);
-// console.log(array_V3);
-// console.log(typeof array_V3);
+console.log(myArray);
+console.log(array_V3);
+console.log(typeof array_V3);
 
 // slice, splice
 
