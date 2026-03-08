@@ -71,3 +71,29 @@ console.log(Object.entries(tinderUser));
 // To Check if the property is present in the object
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 console.log(tinderUser.hasOwnProperty('AGE'));
+
+// De - Structuring of Object :-
+
+const course ={
+    coursename: "JavaScript",
+    price : "999",
+    courseInstructor : "SVN"
+}
+
+// Method 1 :
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+// Method 2 :
+const {courseInstructor : Instructor} = course
+console.log(Instructor);
+
+// Above Method 1 and Method 2 is used to De - Structure the Objects 
+
+/* JSON =====>
+{
+    "name": "swaroop",
+    "coursename": "JavaScript",
+    "price": "free"
+}
+*/
