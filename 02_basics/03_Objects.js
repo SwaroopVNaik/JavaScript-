@@ -9,7 +9,7 @@ Value → can be any data type (string, number, array, function, another object,
 // Objects can be declared in two types :-
 // Literal and Constructor
 
-// when we declare objects are literals it won't become singleton
+// when we declare objects as literals it won't become singleton
 // when we declare objects as constructor it becomes singleton
 
 // Object Literals 
