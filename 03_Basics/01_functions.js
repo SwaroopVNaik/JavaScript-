@@ -96,4 +96,3 @@ console.log(returnSecondValue(myNewArray));
 
 // case 2 :
 console.log(returnSecondValue([200, 300, 500, 1000]));
-

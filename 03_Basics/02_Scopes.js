@@ -32,3 +32,52 @@ if (true){
 // console.log(a);
 // console.log(b);
 console.log("OUTER :",a);
+
+function one(){
+  const username = "Swaroop"
+
+  function two(){
+    const website = "Youtube"
+    console.log(username);
+    
+  }
+  // console.log(website); 
+   two()
+
+}
+// one() 
+
+if(true){
+  const username = "Swaroop"
+
+  if(username === "Swaroop"){
+
+    const website = "youtube"
+    console.log(username + website);
+    
+  }
+  // console.log(website);
+  
+}
+// console.log(username); 
+
+//  +++++++++++++++++++++++++ intersting ++++++++++++++++++++++++
+
+function addone(num){
+  return num + 1
+}
+
+console.log(addone(5));
+
+// 2nd Example
+// This is to show that in JS the Variables are very powerful 
+//  thwy hold a function, json, etc
+// This can be called as Expression 👇 to but works like a func() itself 
+const addTwo = function(num){
+  return num + 2
+}
+
+addTwo(5) 
+// in the method od declaring function always call the function below the function 
+
+
