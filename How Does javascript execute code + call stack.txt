@@ -1,0 +1,99 @@
+Note : JavaScript Runs is Single Threaded, and it has processor it runs accroding to it 
+
+JavaScript Execution Context 
+
+=> JavaScript runs the code in 2 phases :
+
+1) Global Execution Context => wherever this global execution context is done. it will be referred to variable called this.
+
+Note : Every Execution Context (this) will Have different global execution (example => browser(chromw) => Windows)
+
+2) Function Execution Context
+
+3) Eval Execution Context (This is a property in - itself) 
+
+JavaScript Code run 2 phases => 
+
+***Memory Creation Phase.
+***Execution Phase.
+
+Let's Understand with a example : 
+
+let val1 = 10
+let val2 = 5 
+Function addNum(num1, num2){
+    let total = num1 + num2
+    return total
+}
+let result1 = addNum(val1, val2)
+let result2 = addNum(10, 2)
+
+
+phase 1 : global Execution 
+            |
+(any code we run it will start from global execution)
+       Then, Allocated to (this)
+            |
+Phase 2 : Memory Creation Phase
+(In Memory Phase all the varibale names are collected)
+(And, the variables are stored with undefined)
+Example : var1 -> (undefined)
+          var2 -> (undefined)
+          addNum -> definition => That is : (num1, num2){
+                                                let total = num1 + num2
+                                                    return total
+                                                }
+        result1 -> undefined
+        result2 -> undefined
+
+Phase 2 : Is Also Called as Cycle Phase. 
+            |
+phase 3 :  Execution Phase 
+
+step 1 : val1 <-- 10 
+step 2 : val1 <-- 5 
+(sandBox)
+step 3 : addNum --------> Whenever new function Executes (new 
+                            execution context) will be created
+                                   (new variable Enviroment)
+                                              +
+                                       (Execution Thread)
+
+Since now new execution context have been created (sandBox),
+Again, Memory Creation Phase(Phase 2) and Execution Phase (Phase 3)
+will execute again, it will execute again for addNum() Func()
+
+addNum phase(2) : Memory Creation Phase
+                  val1 <-- undefined
+                  val1 <-- undefined
+                  total <-- undefined
+
+addNum Phase(3) : Execution Phase
+                  num1 -> 10
+                  num2 -> 5
+                  total -> 15  (it is returned to global execution context / value)           
+
+Remember ===>
+""""Once function addNum execution Phase(2) and Phase(3) is done 
+(new execution context) will be deleted"""
+
+Next we Have 
+
+phase 3 : Execution Phase => 
+result1 -> 15
+result2 -> addNum ---> so, again, new variable Enviroment will be created
+                            (New Variable Enviroment)
+                                       +
+                                    (Thread)
+                                        |
+                                  (In Mmeory Phase)
+                                        |
+                             Again,Phase(2) and Phase(3) will be reapeted
+
+
+/////////////////////// CALL STACK ////////////////////
+             
+LIFO CONCEPTS WORKS HERE, 
+
+LAST IN FRIST OUT
+          
