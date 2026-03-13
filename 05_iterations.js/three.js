@@ -1,6 +1,7 @@
 // For of loop -> to add loops in array we use (forof loop)
 // For in Loop -> to add loops  in Objects we use (forin loop)
 
+
 const arr = [1, 2, 3, 4, 5]
 
 for (const value of arr) {
