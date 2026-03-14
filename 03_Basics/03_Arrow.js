@@ -57,6 +57,7 @@ Protien()
 //  () => {} 
 
 // Basic Arrow Function (Explicit Return Arrow Function)
+// An explicit return means you write the return keyword inside the function body.
 const addTwo = (num_1, num_2) => {
     return num_1 + num_2
 }
@@ -64,6 +65,7 @@ const addTwo = (num_1, num_2) => {
 // console.log(addTwo(3, 4)); 
 
 // Implicit arrow function
+// An implicit return means the function automatically returns the expression without writing return.
 const addTwo_V1 = (num_1 , num_2) => ( num_1 + num_2 )
 
 console.log(addTwo_V1(7 , 7));
