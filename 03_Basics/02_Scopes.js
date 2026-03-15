@@ -18,6 +18,15 @@ In JavaScript, `let` and `const` are the preferred ways to declare variables.
 For these reasons, modern JavaScript mostly uses `let` and `const`
 instead of `var`.
 */
+
+// The JavaScript engine moves declarations (variables and functions) to the top of their scope before execution. 
+
+// Example => 
+
+var a;
+console.log(a); // undefined
+a = 5;
+
 let a = 777 // Global
 
 if (true){
