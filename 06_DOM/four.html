@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 4</title>
+</head>
+<body style="background-color: black; color: white">
+    <ul class="lanaguage">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // Edit and Remove Elements in DOM
+
+    // ADDING ELEMENTS
+    function ADD_Language(lang_name){
+        const li_V1 = document.createElement('li') // creating new element
+        li_V1.innerHTML = `${lang_name}`  // setting the text/content of the <li>
+
+        // Attatchment to Document
+        document.querySelector('.lanaguage').appendChild(li_V1) // adding the new element in the parent node 
+    }
+
+    ADD_Language("python")
+    ADD_Language("Java")
+
+    // Optimized Method => Prefer this method
+    function addOptilang(langname){
+        const li_v2 = document.createElement('li'); // creating new element
+        li_v2.appendChild(document.createTextNode(langname))
+
+        // Attatchment to Document
+        document.querySelector('.lanaguage').appendChild(li_v2) // adding the new element in the parent node 
+    }
+    
+    addOptilang("TypeScript")
+
+
+    // EDITING ELEMENTS
+    // li:nth-child(2) ==> Strictly follow this syntax no spaces 
+    const secondlang = document.querySelector("li:nth-child(2)") // selects one element (the 2nd li)
+    const newli = document.createElement('li') // creating new element
+    newli.textContent = "MoJo" // adding textcontent
+    secondlang.replaceWith(newli) // replacing the content according to (li:nth-child(2))
+
+    // Edit
+    const Firstlang = document.querySelector("li:nth-child(1)") //  selects one element (the 1st li)
+    const new_li_V2 = document.createElement('li') // creating new element
+    new_li_V2.textContent = "Java" // adding textcontent
+    Firstlang.replaceWith(new_li_V2) // replacing the content according to (li:nth-child(2))
+
+    // Remove 
+    const lastlang = document.querySelector("li:last-child") // selecting the element from li
+    lastlang.remove() // removing the element 
+</script>
+</html>
