@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./EventBasics.js" type="text/JavaScript"></script>
     <title>HTML EVENTS</title>
 </head>
 <body style="background-color: #414141; color : Aliceblue">
@@ -19,6 +20,60 @@
    </div>
 </body>
 <script>
+
+    //AttachEVent  => this was used at the start of the Internet Explorer
+    //JQuery - onevent
+
+    // few types of EVENTS in JS 
+    /*
+    type, timestamp, defaultPrevented
+    Target, toElement, srcElement, currentTarget, 
+    clientX, clientY, screenX, screenY
+    altkey, ctrlkey, shiftkey, keyCode
+     */
+
+    //Approach => 1 ==> adding events inside HTML Tags
+
+    // Approach => 2 
+    /* document.getElementById('owl').onclick = function(){
+        alert("Owl Clicked !")
+    } */
+
+    // Approach => 3 (Best Approach)
+    document.getElementById('owl').addEventListener('click', function(){
+        alert("Owl Clicked !!!")
+    }, false)
+
+    // Event Object
+
+    document.getElementById('river').addEventListener('click', function(event){
+        console.log(event)
+    }, false) // false (Event Propagation) is default in Event Object
+
+    // (Event Propagation) has two contexts =>>>
+    // 1) Event Bubbling (false) ==>  Moslty Used In Market ==> Prints buttom  to up
+    // Exmaple ==> first owl printed || second "clicked inside UL"
+    // 2) Event capturing (true) ==> few scenarios Used, Event Capturing goes top to bottom
+
+    // This will be printed when we click inside images ie UL
+    document.getElementById('images').addEventListener('click', function(event){
+        console.log("Clicked Inside the UL")
+    }, false) 
+
+    // This will be printed when clicked specifically inside owl
+    document.getElementById('river').addEventListener('click', function(event){
+        console.log('River Clicked')
+        event.stopPropagation // the event becomes bubble and it won't go to above event
+    }, false) 
+
+    document.getElementById('google').addEventListener('click', function(event){
+        event.preventDefault(); // default event gets prevented and our custom event will function
+        event.stopPropagation(); // Stopping propagation
+        console.log("google Clicked");
+    }, false)
+
     
+
+
 </script>
 </html>
