@@ -18,14 +18,14 @@
     const intervalID = setInterval(SayDate, 1000, "hi")
 
     //Stopping SetInterval
-    clearInterval(intervalID)
+    clearInterval(intervalID) // to Stop SetInterval
 
     const start = function(){
         console.log("Started")
     }
 
     document.querySelector("#start").addEventListener('click', function(){
-        setInterval(start, 1000, "Started")
+        setInterval(start, 1000, "Started") 
     })
 
     // later Stop Button No internet now 
