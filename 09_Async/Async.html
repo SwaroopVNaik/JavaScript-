@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async in JavaScript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    /* setTimeout => With help of this we set some time after this time completes,the code Executes in the SetTimeout Function */
+    // This Function SetTimeOut executes only once, not repeatedly 
+    const saySwaroop = function(){
+        console.log('Swaroop');
+    }
+    // Provinding reference
+    setTimeout(saySwaroop, 2000)  // Time Handler = 2 sec's (2000)
+
+    /* Changing the innerHTML element <h1></h1>, 
+     with setTimeout it will chnage in 2sec's */
+    const ChangeText = function(){
+        document.querySelector('h1').innerHTML = "Best JS Series"
+    }
+
+    // Provinding reference
+    // Time Handler = 2 sec's (2000)
+    const changeME = setTimeout(ChangeText, 2000) 
+
+    // Stopping the setTimeout by using clearInterval
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(changeME)
+        console.log("Stopped")
+    })
+</script>
+</html>
