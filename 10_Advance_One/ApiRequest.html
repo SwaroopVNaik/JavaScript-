@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white">
+    {Status : 0}   UNSENT => 	Client has been created. open() not called yet.
+    <br><br>
+    {Status : 1}	OPENED =>	open() has been called.
+    <br><br>
+    {Status : 2}	HEADERS_RECEIVED =>	send() has been called, and headers and status are available.
+    <br><br>
+    {Status : 3}	LOADING =>	Downloading; responseText holds partial data.
+    <br><br>
+    {Status : 4}	DONE =>	The operation is complete.
+</body>
+<script>
+    const RequestUrl = 'https://api.github.com/users/SwaroopVNaik'
+    // XMLHttpRequest => With the help of this method we can send and recive Data.
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', RequestUrl) // Open Status Called
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState); 
+        if(xhr.readyState == 4){
+            // Whenever we are Talking about current Context we use this
+            // parse => This method Converts String into JSON
+            const data = JSON.parse( this.responseText)
+            // Most of the time the response form URL is String, few cases Object
+            console.log(typeof data)
+            console.log(data.followers);
+        }
+    }   // For Continues Tracking
+    xhr.send()
+
+    // TO know more about Console.log() V8 Repo in github Src folder => d8 file
+</script>
+</html>
