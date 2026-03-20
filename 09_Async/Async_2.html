@@ -20,14 +20,27 @@
     //Stopping SetInterval
     clearInterval(intervalID) // to Stop SetInterval
 
-    const start = function(){
-        console.log("Started")
+
+    // Start and Stop
+    let intervalId; // store interval ID
+
+    const start = function() {
+        console.log("Swaroop");
+        
+        intervalId = setInterval(() => {
+            console.log("Started");
+        }, 1000);
     }
+    
+    const stop = function() {
+        clearInterval(intervalId);
+        console.log("Stopped")
+    }
+    
+    document.querySelector("#start").addEventListener('click', start);
+    document.querySelector("#stop").addEventListener('click', stop);
 
-    document.querySelector("#start").addEventListener('click', function(){
-        setInterval(start, 1000, "Started") 
-    })
+    // Color changer and keyboard press
 
-    // later Stop Button No internet now 
 </script>
 </html>
