@@ -24,4 +24,4 @@ Object Literal
 
 - Inheritance => Inheritance means one class can use the properties and methods of another class.
 
-- Polymorphism => Polymorphism means “one thing, many forms.”
+- Polymorphism => Polymorphism means (“one thing, many forms.”)
