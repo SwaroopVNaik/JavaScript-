@@ -109,6 +109,10 @@ ConsumePromiseFive()
 // getallusers()
 
 // Using fetch
+// A fetch() promise only rejects when a netwrok error is encountred,
+// A fetch() promise does not reject on HTTP errors[404.., etc], instead then() handler must check the response.ok 
+// and response.status propeties
+
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((response) => {
     return response.json()
