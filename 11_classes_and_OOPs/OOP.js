@@ -32,6 +32,7 @@ function User(username, loginCount, isLoggedIn){
      no need to execute return this */
 }
 
+//  How (new) keyword executes ?
 // step 1 => Whenever we declare (new)keyword a empty object is created which is called instance 
 // step 2 => there will be constructor function call due to (new) keyword 
 // step 3 => all the arguments will be injected in (this) keyword 
@@ -41,5 +42,3 @@ const userOne =  new User("Swaroop", 12, true)
 const userTwo = new User("Chaiaurcode", 11, false)
 console.log(userOne.constructor);
 console.log(userTwo);
-
-
