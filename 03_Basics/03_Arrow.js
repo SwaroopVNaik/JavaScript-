@@ -79,8 +79,6 @@ const OBJ_RETURN = (OBJ_1, OBJ_2) => ({username : "swaroop"})
 
 console.log(OBJ_RETURN());
 
-
-
-
-
-
+// Advantage of Arrow Function 
+// Concise / Shorter Code
+// Implicit  return
