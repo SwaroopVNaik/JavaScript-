@@ -2,7 +2,7 @@
 // Promise has 2 parts resolve and Reject
 // Promise has 3 stages 
 /*
-1)Pending => The task is still running, Result is not available yet
+1) Pending => The task is still running, Result is not available yet
 2) Fullfilled(Resolved) => The task is completed successfully, we get result/value
 3) Rejected => The task failed, you get an error
 */
