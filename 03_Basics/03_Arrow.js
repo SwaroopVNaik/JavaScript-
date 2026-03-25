@@ -82,3 +82,7 @@ console.log(OBJ_RETURN());
 // Advantage of Arrow Function 
 // Concise / Shorter Code
 // Implicit  return
+// (this) keyword return empty object { }
+// In arrow fucntion (fucntion hoisting) is resolved
+
+// Arrow function is allternative way to define function
