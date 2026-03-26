@@ -7,6 +7,6 @@
 - ### Helps reuse code (no need to duplicate methods).
 - ### Forms a prototype chain.
 
-### Note :- In JavaScript Eveything in itself is a Object, and the properties of Objects is also available with String, Array , Null 
+### Note :- In JavaScript Eveything in itself is a Object, and the properties of Objects is also available with String, Array , Null , etc
 
 
